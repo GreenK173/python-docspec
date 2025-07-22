@@ -1,3 +1,10 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docspec_python"
+
 [tool.uv.sources]
 docspec = { workspace = true }
 docspec-python = { workspace = true }
