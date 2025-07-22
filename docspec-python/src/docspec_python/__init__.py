@@ -271,4 +271,5 @@ def format_arglist(args: t.Sequence[Argument], render_type_hints: bool = True) -
             parts.insert(0, "**")
         result.append("".join(parts))
 
-    return ", ".join(result)
+    trailing_comma = "," if args else ""
+    return ", ".join(result) + trailing_comma
