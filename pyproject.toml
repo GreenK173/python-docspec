@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docspec_python"
+dynamic = ["version"]
 
 [tool.uv.sources]
 docspec = { workspace = true }
